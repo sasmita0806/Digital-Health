@@ -14,6 +14,8 @@ import joblib
 from datetime import date
 
 
+
+
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
@@ -22,7 +24,7 @@ mail_settings = {
     "MAIL_PORT": 465,
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
-    "MAIL_USERNAME": 'onehealth.noreply@gmail.com',
+    "MAIL_USERNAME": 'onehealth.reply@gmail.com',
     "MAIL_PASSWORD": 'kejubbtuazirmqpw'
 }
 app.config.update(mail_settings)
