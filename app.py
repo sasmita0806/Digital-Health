@@ -683,7 +683,7 @@ def index():
             """SELECT `password` FROM `user` WHERE `email_id` LIKE '{}'""".format(email))
         password = cursor.fetchone()
         msg = Message(
-            'Your Onehealth Login Password',
+            'Your digitalhealth Login Password',
             sender='Onehealth',
             recipients=[email]
         )
